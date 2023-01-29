@@ -11,7 +11,7 @@ import { auth } from './firebase';
 const App =()=> {
   const user=useSelector(selectUser);
   const dispatch=useDispatch();
-  //jaise hi hamri app hoti h render then hamra useEffect chalega
+  //when app will render,usereffect will work
   useEffect(()=>{
     const checkUser = () => {
       auth.onAuthStateChanged((userAuth)=>{

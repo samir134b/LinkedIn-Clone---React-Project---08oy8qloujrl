@@ -16,11 +16,11 @@ function Sidebar() {
     <p>Full Stack developer</p>
     </div>
     <div className='profile_stat'>
-    <span>Who viwed your profile</span>
+    <span>Who Viewed Your Profile</span>
     <span className='stat_number'>20</span>
     </div>
     <div className='profile_stat'>
-    <span>connection<br/><b>Grow Your Network</b></span>
+    <span>Connection<br/><b>Grow Your Network</b></span>
     <span className='stat_number'>150</span>
 
     </div>

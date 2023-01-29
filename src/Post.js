@@ -39,17 +39,17 @@ const Post=forwardRef(({name,descrption,message,photoURL},ref) =>{
     </div>
     <div className='post_foter_option'>
     <ShareIcon/>
-    <span>share</span>
+    <span>Share</span>
     
     </div>
     <div className='post_foter_option'>
     <SendIcon/>
-    <span>send</span>
+    <span>Send</span>
     
     </div>
     <div className='post_foter_option'>
     <CommentIcon/>
-    <span>comment</span>
+    <span>Comment</span>
     
     </div>
     

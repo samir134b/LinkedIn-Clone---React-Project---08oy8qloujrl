@@ -8,7 +8,7 @@ function Widget() {
     <div className='widget'>
     <div className='widget_top'>
     <div className='widget_header'>
-    <h4>LinkdIn News</h4>
+    <h4>LinkedIn News</h4>
     <InfoIcon/>
     </div>
     <div className='widget_body'>

@@ -1,19 +1,23 @@
 // For Firebase JS SDK v7.20.0 and later, measurementId is optional
+// Import the functions you need from the SDKs you need
 import firebase from "firebase";
 
-
+// Your web app's Firebase configuration
 const firebaseConfig = {
-  apiKey: "AIzaSyDk-hktYiXqI2cHerhgLr4fIvezxoFJr30",
-  authDomain: "linkedin-clone-251be.firebaseapp.com",
-  projectId: "linkedin-clone-251be",
-  storageBucket: "linkedin-clone-251be.appspot.com",
-  messagingSenderId: "30234735425",
-  appId: "1:30234735425:web:2d84998bbabf0ca3b5e7c0",
-  measurementId: "G-JREKDBNG5V"
-  };
-  //this special line of code here connects everything
-  const firebaseApp=firebase.initializeApp(firebaseConfig);
-  //get the firebase databse
-  const db=firebaseApp.firestore();
-  const auth = firebase.auth();
-  export { db,auth }
+    apiKey: "AIzaSyA5dYbC9EypdwdbDXMDUZvMrksAFPmBBxg",
+    authDomain: "linkedin-clone-49227.firebaseapp.com",
+    projectId: "linkedin-clone-49227",
+    storageBucket: "linkedin-clone-49227.appspot.com",
+    messagingSenderId: "654314763170",
+    appId: "1:654314763170:web:c616caafbb866ab529b8fb"
+};
+
+// Initialize Firebase
+const firebaseApp= firebase.initializeApp(firebaseConfig);
+const db =firebaseApp.firestore();
+const auth=firebase.auth();
+export { db, auth }
+
+//
+
+

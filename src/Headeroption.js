@@ -1,26 +1,26 @@
+
 import React from 'react'
-import { Avatar } from '@mui/material';
-import "./css/header.css";
-import { useSelector,useDispatch } from 'react-redux';
-import { selectUser ,logoutuser} from './features/userSlice';
+import "./css/Header.css";
+import { Avatar } from "@mui/material";
+import { useSelector } from 'react-redux';
+import { selectUser } from './features/userSlice';
 import firebase from "firebase";
 
-function Headeroption({Icon,title,avatar}) {
-  const user=useSelector(selectUser);
-  const dispatch = useDispatch()
+function Headeroptions({ Icon, title, avatar}) {
+
+  const user = useSelector(selectUser);
   return (
-    <div className='header_option'>
-    {
-      Icon &&  <Icon/>
-    }
-    {
-        avatar && <Avatar name={avatar} src={user.photoURL} onClick={e=>firebase.auth().signOut().then( dispatch(logoutuser()))}/>
-    }
-   
-    <span>{title}</span>
-    
-    </div>
+      <div className="header__options">
+          {
+              Icon &&  <Icon></Icon>
+          }
+         {
+  
+             avatar && <Avatar name={avatar} src={user.photoURL} onClick={e=>firebase.auth().signOut()}/>
+         }
+          <span>{title}</span>
+      </div>
   )
 }
 
-export default Headeroption
+export default Headeroptions

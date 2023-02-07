@@ -1,61 +1,73 @@
 import React from 'react'
-import "./css/widget.css"
+import "./css/Widget.css";
 import InfoIcon from '@mui/icons-material/Info';
-
 
 function Widget() {
   return (
-    <div className='widget'>
-    <div className='widget_top'>
-    <div className='widget_header'>
-    <h4>LinkedIn News</h4>
-    <InfoIcon/>
+    <>
+    <div className="widget">
+        <div className="widget_top">
+            <div className="widget__header">
+                <h4>LinkedIn News</h4>
+                <InfoIcon/>
+            </div>
+            <div className="widget__body">
+                <ul className="widget__options">
+                    <li><h4>Slaying Jon Search Fees</h4>
+                    <p>6d ago * 4,55 readers</p>
+                    </li>
+                    <li>
+                        <h4>A Two Pizza Rule For Eating</h4>
+                        <p>2d ago * 6,12 readers</p>
+                    </li>
+                    <li>
+                        <h4>How to handle a Workplace Breakup</h4>
+                        <p>3d ago * 4,55 readers</p>
+                    </li>
+                    <li>
+                        <h4>Flexi leave is the new flexi</h4>
+                        <p>4d ago * 3,55 readers</p>
+                    </li>
+                    <li>
+                        <h4>Shortest hour boost productivity</h4>
+                        <p>1d ago * 2,55 readers</p>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div className="widget_bottom">
+            <div className="widget__header">
+                <h4>Today's Top Courses</h4>
+                <InfoIcon/>
+            </div>
+            <div className="widget__body">
+                <ul className="widget__options">
+                    <li>
+                        <h4>Leading with a Heavy Heart</h4>
+                        <p>Kay Coly</p>
+                    </li>
+                    <li>
+                        <h4>Building Resilience</h4>
+                        <p>Tatianan Kolovau</p>
+                    </li>
+                    <li>
+                        <h4>Critical Thinking for Better Judgement</h4>
+                        <p>3d * 4,55 readers</p>
+                    </li>
+                    <li>
+                        <h4>Flexi leave is the new flexi</h4>
+                        <p>3d * 4,55 readers</p>
+                    </li>
+                    <li>
+                        <h4>Shortest hour boost productivity</h4>
+                        <p>4d * 2,55 readers</p>
+                    </li>
+                </ul>
+            </div>
+        </div>
+      
     </div>
-    <div className='widget_body'>
-    <ul className='widget_options'>
-    <li>
-    <h4>Full Stack job search</h4>
-    <p>6d ag0 * 4,55 readers</p>
-    
-    </li>
-    <li>
-    <h4>React job</h4>
-    <p>7d ag0 * 7,55 readers</p>
-    
-    </li>
-    <li>
-    <h4>Javascript question</h4>
-    <p>10d * 6,77 readers</p>
-    
-    </li>
-    <li>
-    <h4>Nodejs</h4>
-    <p>44d ag0 * 56 readers</p>
-    
-    </li>
-    <li>
-    <h4>Mongo DB</h4>
-    <p>70 ago * 90 readers</p>
-    
-    </li>
-    
-    </ul>
-    </div>
-    </div>
-    <div className='widget_bottom'>
-    <div className='widget_header'>
-    <h4>Start leaning today</h4>
-    <InfoIcon/>
-    
-    </div>
-    <div className='widget_body'>
-    
-    
-    
-    </div>
-    
-    </div>
-    </div>
+    </>
   )
 }
 
